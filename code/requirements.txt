@@ -1,0 +1,6 @@
+pip
+Flask
+cassandra-driver  
+passlib
+flask-login
+requests
