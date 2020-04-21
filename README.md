@@ -38,3 +38,11 @@ at the end to run the application over the cloud the below commands were used.
         sudo docker build . --tag=cassandrarest:v1
         sudo docker run -p 80:80 cassandrarest:v1
 
+notes:
+users can use POST, PUT and DELETE using the terminal and the below commands - the DNS is always the same as i am using elastic IP service -
+
+	curl -i -H "Content-Type: application/json" -X POST -d '{"year":***,"player_name":"***"}' http://ec2-54-88-212-181.compute-1.amazonaws.com/best
+	curl -i -H "Content-Type: application/json" -X PUT -d '{"year":***,"player_name":"***"}' http://ec2-54-88-212-181.compute-1.amazonaws.com/best
+	curl -i -H "Content-Type: application/json" -X DELETE -d '{"year":***}' http://ec2-54-88-212-181.compute-1.amazonaws.com/best
+
+the stars (***) mean that the user should specify the value.
